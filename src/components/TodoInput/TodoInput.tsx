@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from "react";
+import React, { FC, useState } from "react";
 import { v4 as uuid } from "uuid";
 import { FaAlignLeft } from "react-icons/fa";
 import { InputWrapper, Icon } from "./style";
