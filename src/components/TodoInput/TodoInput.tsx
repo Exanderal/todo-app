@@ -1,10 +1,12 @@
 import React, { FC } from "react";
-import { Wrapper } from "./style";
+import { FaAlignLeft } from "react-icons/fa";
+import { InputWrapper, Icon } from "./style";
 const TodoInput: FC = () => {
   return (
-    <Wrapper>
-      <h1>TodoInput</h1>
-    </Wrapper>
+    <InputWrapper>
+      <Icon as={FaAlignLeft} />
+      <input placeholder="Add a task" />
+    </InputWrapper>
   );
 };
 

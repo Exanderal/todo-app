@@ -5,10 +5,18 @@ export const Container = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(160deg, #f06292 0 50%, #e55c8a 50% 100%);
+  background: linear-gradient(
+    160deg,
+    ${(props) => props.theme.color.primary} 0 50%,
+    ${(props) => props.theme.color.secondary} 50% 100%
+  );
 `;
 export const TodoWrapper = styled.div`
-  background: linear-gradient(#3c424a, #000000);
-  padding: 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: ${(props) => props.theme.color.tertiary};
   color: white;
+  min-width: 30vw;
+  border-radius: 4px;
 `;
