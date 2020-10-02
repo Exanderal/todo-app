@@ -6,6 +6,7 @@ export const InputWrapper = styled.div`
   flex: 1;
   width: 68%;
   padding: 0 0.5rem;
+  margin-bottom: 0.5rem;
   border-radius: 4px;
   border: 1px solid ${(props) => props.theme.color.darkergrey};
   background-color: ${(props) => props.theme.color.darkgrey};
