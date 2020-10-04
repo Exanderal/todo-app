@@ -1,12 +1,7 @@
 import React, { FC } from "react";
+import { ITodos } from "../../types/models/Todo";
 import TodoItem from "../TodoItem";
 import { ListWrapper } from "./style";
-
-interface ITodos {
-  id: string;
-  desc: string;
-  checked: boolean;
-}
 
 type Props = {
   todos: Array<{ id: string; desc: string; checked: boolean }>;

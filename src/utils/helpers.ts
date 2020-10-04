@@ -4,7 +4,10 @@ interface ITodos {
   checked: boolean;
 }
 
-export function removeIdFromList(list: ITodos[], idToRemove: string): ITodos[] {
+export function removeIdFromList<T extends { id: string }>(
+  list: T[],
+  idToRemove: string
+) {
   return list.filter((cur) => {
     return cur.id !== idToRemove;
   });

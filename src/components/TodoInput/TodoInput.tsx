@@ -3,11 +3,8 @@ import { v4 as uuid } from "uuid";
 import { FaAlignLeft } from "react-icons/fa";
 import { InputWrapper, Icon } from "./style";
 import { saveTodosToLocalStorage } from "../../utils/helpers";
-interface ITodos {
-  id: string;
-  desc: string;
-  checked: boolean;
-}
+import { ITodos } from "../../types/models/Todo";
+
 type Props = {
   setTodos: React.Dispatch<React.SetStateAction<ITodos[]>>;
   todos: ITodos[];

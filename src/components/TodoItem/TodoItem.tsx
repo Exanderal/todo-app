@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
 import { FaCheck, FaEllipsisH } from "react-icons/fa";
+import { ITodos } from "../../types/models/Todo";
 import { removeIdFromList, saveTodosToLocalStorage } from "../../utils/helpers";
 import TodoDropdown from "../TodoDropdown";
 import {
@@ -9,12 +10,6 @@ import {
   SettingsIcon,
   ItemDescription,
 } from "./style";
-
-interface ITodos {
-  id: string;
-  desc: string;
-  checked: boolean;
-}
 
 type Props = {
   id: string;
