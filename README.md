@@ -8,7 +8,7 @@ You can find live version right here: https://todos-demo-app.netlify.app/
 
 ## Purpose ?
 
-It was created for non commercial use, as a first project in challenge 5 projects in 5 days using React and Typescript
+It was created for non commercial use.
 
 ## Credits
 
